@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NASA Image of the Day</title>
+  <link rel="stylesheet" href="css/nasa.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+   
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+  
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- NASA Content -->
+  <div class="nasa-container">
+    <h1 id="title">NASA Astronomy Picture of the Day</h1>
+    <p class="date" id="date">Loading...</p>
+    <img id="nasa-image" src="" alt="NASA APOD" />
+    <p id="description">Fetching description...</p>
+
+    <!-- New Date Picker -->
+    <div class="date-picker">
+      <input type="date" id="date-input" max="" />
+      <button onclick="searchByDate()">Find Image</button>
+    </div>
+
+    <div class="controls">
+      <button onclick="previousDate()">Previous</button>
+      <button onclick="nextDate()">Next</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Joy Roy </p>
+  </footer>
+
+<script src="js/nasa.js"></script>
+</body>
+</html>

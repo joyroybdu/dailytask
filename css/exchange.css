@@ -1,0 +1,125 @@
+
+    body {
+     background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .exchange-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .exchange-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .rate-box {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .rate-box select,
+    .rate-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .rate-box button {
+      margin: 10px 0;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff;
+      color: #2d572c;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 2.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+        list-style: none;
+      
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+        
+         
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        border-radius: 8px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  

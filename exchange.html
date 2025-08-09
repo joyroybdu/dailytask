@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exchange Rate</title>
+  <link rel="stylesheet" href="css/exchange.css" />
+  
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+   
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Content -->
+  <div class="exchange-container">
+    <h1>Currency Converter</h1>
+    <div class="rate-box">
+      <select id="base-currency"></select>
+      <input type="number" id="amount" placeholder="Enter amount" value="1"/>
+      <select id="target-currency"></select>
+      <button onclick="swapCurrencies()">Swap Currencies</button>
+      <div class="result" id="converted-result">Loading...</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Joy Roy </p>
+  </footer>
+
+<script src="js/exchange.js"></script>
+</body>
+</html>

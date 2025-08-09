@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Use</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+   
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+   
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>Do Your Daily Task</h1>
+    <p>Get real-time data from various sources with a click</p>
+  </header>
+
+  <!-- CARD GRID SECTION -->
+  <section class="cards-wrapper">
+    
+  
+  <!-- Exchange Rate Card -->
+<div class="parent" onclick="goTo('exchange.html')">
+  <div class="card">
+    <div class="logo">
+      <span class="circle circle1"></span>
+      <span class="circle circle2"></span>
+      <span class="circle circle3"></span>
+      <span class="circle circle4"></span>
+      <span class="circle circle5">💱</span>
+    </div>
+    <div class="glass"></div>
+    <div class="content">
+      <span class="title">Exchange Rate</span>
+      <span class="text">Live currency exchange rates between countries.</span>
+    </div>
+    <div class="bottom">
+      <div class="social-buttons-container"></div>
+      <div class="view-more">
+       
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- NASA Picture -->
+    <div class="parent" onclick="goTo('nasa.html')">
+      <div class="card">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5">🚀</span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">NASA Picture</span>
+          <span class="text">Daily astronomy image from NASA’s APOD API.</span>
+        </div>
+        <div class="bottom">
+          <div class="social-buttons-container"></div>
+          <div class="view-more">
+           
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weather -->
+    <div class="parent" onclick="goTo('weather.html')">
+      <div class="card">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5">☁️</span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">Weather</span>
+          <span class="text">Get live weather data by location using API.</span>
+        </div>
+        <div class="bottom">
+          <div class="social-buttons-container"></div>
+          <div class="view-more">
+         
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- holiday -->
+    <div class="parent" onclick="goTo('holiday.html')">
+      <div class="card">
+        <div class="logo">
+          <span class="circle circle1"></span>
+          <span class="circle circle2"></span>
+          <span class="circle circle3"></span>
+          <span class="circle circle4"></span>
+          <span class="circle circle5">🎉</span>
+        </div>
+        <div class="glass"></div>
+        <div class="content">
+          <span class="title">Here is World Holidays</span>
+          <span class="text">Find Holidays by Country and Year .</span>
+        </div>
+        <div class="bottom">
+          <div class="social-buttons-container"></div>
+          <div class="view-more">
+           
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Joy Roy </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public Holiday App</title>
+  <link rel="stylesheet" href="css/holiday.css">
+</head>
+<body>
+      <!-- ✅ Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Holiday App</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+      
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Public Holiday Finder</h1>
+    
+    <div class="input-group">
+      <label for="country">Country Code</label>
+      <input type="text" id="country" placeholder="Enter country code">
+      
+      <label for="year">Year:</label>
+      <input type="number" id="year" placeholder="Enter year" value="2025">
+      
+      <button id="fetchBtn">Get Holidays</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="js/holiday.js"></script>
+</body>
+</html>

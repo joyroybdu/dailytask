@@ -1,0 +1,126 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #8a8ea1, #cec6d5);
+      color: #fff;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #5e60ce;
+    }
+
+    /* ===== MAIN CONTAINER ===== */
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px);
+      padding: 20px;
+    }
+
+    .weather-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #5e60ce;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #8e90d1;
+    }
+
+    .result {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .result img {
+      vertical-align: middle;
+    }
+
+    .error {
+      margin-top: 15px;
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+
+      .main {
+        height: auto;
+      }
+    }
+  

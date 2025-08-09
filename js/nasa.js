@@ -1,8 +1,6 @@
-  
-    function toggleMenu() {
-      document.getElementById('nav-links').classList.toggle('show');
-    }
-
+  function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('show');
+}
     const apiKey = "2XTKr0zgeGPPcxAwKWi9W0ZbzeOPqNajDd320Fq2";
     let currentDate = new Date();
 
